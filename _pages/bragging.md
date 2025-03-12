@@ -25,7 +25,7 @@ Additional tools and commands are documented in the Makefile for quick reference
 
 ---
 
-## Rethinking Native Apps: Delivering Efficiency & a Unified Experience
+## Rethinking Native Apps: Delivering Efficiency & a Unified Experience - 2024
 
 - **Challenge:** Developing both desktop and native app versions was slow and expensive for our small team. The “write once, use anywhere” promise was overhyped.
 - **Insights from the Logs:**
