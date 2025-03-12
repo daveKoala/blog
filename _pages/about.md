@@ -4,9 +4,7 @@ title: "About"
 author_profile: true
 ---
 
-# About David Clare
-
-Hello, I'm David Clare, an experienced technology leader dedicated to delivering practical, reliable solutions that help companies move faster and achieve more. My career spans decades of hands-on technical work, strategic leadership, and team development across high-stakes environments.
+Hello, I'm David Clare, an experienced developer dedicated to delivering practical, reliable solutions that help companies move faster and achieve more. My career spans decades of hands-on technical work, strategic leadership, and team development across high-stakes environments.
 
 ## My Professional Journey
 
