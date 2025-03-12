@@ -1,5 +1,5 @@
 ---
-title: "Another cURL: This time validating TLS versions"
+title: "cURL: Validating TLS versions"
 last_modified_at: 2023-07-19T22:13:03Z
 categories:
   - Code
