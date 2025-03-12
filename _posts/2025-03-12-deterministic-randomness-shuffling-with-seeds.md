@@ -7,9 +7,7 @@ tags:
   - code
 ---
 
-## TL;DR
-
-**Problem:** How do we shuffle an array randomly but repeatably (same seed = same order)?
+TL;DR **Problem:** How do we shuffle an array randomly but repeatably (same seed = same order)?
 
 - **Solution:** Use a pseudorandom number generator (PRNG) to generate consistent randomness.
 
