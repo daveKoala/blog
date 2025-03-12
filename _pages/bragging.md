@@ -1,4 +1,7 @@
-# Brag Document: Accomplishments & Milestones
+---
+permalink: /brag/
+title: "Brag Document: Accomplishments & Milestones"
+---
 
 _Note: Newest entries are at the top._
 
