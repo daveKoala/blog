@@ -1,6 +1,6 @@
 ---
 permalink: /brag/
-title: "Brag Document: Accomplishments & Milestones"
+title: "Brag Sheet: Accomplishments & Milestones"
 ---
 
 _Note: Newest entries are at the top._
@@ -22,6 +22,22 @@ By designing a "Don't Make Me Think" onboarding approach, I ensured that new dev
   4. Run a command (e.g., `make up`) to get started.
 
 Additional tools and commands are documented in the Makefile for quick reference.
+
+---
+
+## Rethinking Native Apps: Delivering Efficiency & a Unified Experience
+
+- **Challenge:** Developing both desktop and native app versions was slow and expensive for our small team. The “write once, use anywhere” promise was overhyped.
+- **Insights from the Logs:**
+  - **Usage Patterns:** App usage peaked just before events.
+  - **User Behavior:** 95% of users turned off notifications.
+  - **Content Consumption:** Native apps were mainly used to read articles and watch some video, while the desktop version was preferred for interactions, media consumption (videos, PDFs), and richer features.
+- **My Contribution:**
+  - **Strategic Proposal:** Advocated for ditching the native apps in favor of a responsive desktop application.
+  - **Innovative Pivot:** Transformed the desktop app into a Progressive Web App (PWA) to capture mobile benefits without the overhead of native development.
+  - **Feature Enhancements:** Redesigned notifications as in-app alerts and a news feed, and improved scheduled emails to allow users to tailor content.
+  - **Prototype:** Presented a “quick and dirty” version of the PWA to owners and directors, demonstrating easy installation—even for clients unable to download native apps.
+- **Outcome:** Streamlined development, reduced costs, and delivered a unified, accessible user experience across platforms.
 
 ---
 
