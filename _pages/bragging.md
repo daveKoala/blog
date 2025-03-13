@@ -25,6 +25,38 @@ Additional tools and commands are documented in the Makefile for quick reference
 
 ---
 
+## Internal Headless CMS Platform – _2025_
+
+**Challenge:**
+
+Our organization needed a versatile internal headless CMS that could manage complex content workflows, cater to a global audience (including users in restricted regions), and integrate with emerging AI tools—all while ensuring robust content control and feedback loops for continuous improvement.
+
+**Solution:**
+
+We built a custom headless CMS with a comprehensive suite of features:
+
+- **Content Versioning & Approval:** Every change was meticulously tracked and approved, ensuring high content integrity.
+- **Global Media Accessibility:** Media hosting and delivery were optimized to ensure seamless access, even in restricted regions like China.
+- **Granular Content Grouping:** Content could be grouped, tagged, and accessed via unique API keys, allowing different clients and departments to manage their data securely.
+- **Departmental Autonomy:** Root departments were empowered to create and ring-fence their own content, fostering ownership and localized control.
+  Usage Tracking for Billing: Detailed usage tracking was integrated to support transparent internal billing and resource management.
+- **Manual Multi-Language Support:** Recognizing the sensitivity and technical nature of the content, manual language support was implemented for accuracy.
+- **AI Integration:** AI-powered editing and image creation features enhanced creative workflows, while internal AI tools leveraged the content for training networks.
+- **Speed & Performance Focus:** The CMS was optimized for rapid content delivery, ensuring high performance under demanding conditions.
+- **User Feedback Mechanism:** A dedicated feature allowed end users to provide direct feedback to content creators/editors when information was wrong or out of date, enabling prompt updates and continuous content improvement.
+  Key Outcomes:
+
+- **Enhanced Operational Efficiency:** Streamlined content workflows and a robust approval process reduced delays and increased productivity.
+- **Improved Global Reach:** Optimized media delivery ensured that all users, including those in restricted regions, experienced reliable access.
+- **Empowered Departments:** Departments gained the autonomy to manage their content securely and effectively.
+- **Advanced AI Capabilities:** Integrated AI features not only boosted creative processes but also supported internal network training.
+- **Transparent Resource Management:** Comprehensive usage tracking facilitated clear billing practices and better resource allocation.
+- **Continuous Improvement:** The user feedback loop ensured that content remained accurate and up to date, directly addressing issues flagged by end users.
+
+This project stands as a testament to our ability to develop innovative, custom solutions that not only address complex organizational needs but also foster continuous improvement and cross-departmental collaboration.
+
+---
+
 ## Azure Container Apps Migration & Modernization
 
 **Challenge:**
