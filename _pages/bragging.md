@@ -25,6 +25,47 @@ Additional tools and commands are documented in the Makefile for quick reference
 
 ---
 
+## Azure Container Apps Migration & Modernization
+
+**Challenge:**
+
+Our original setup on Azure AKS was expensive (approximately £6k/month), overly complex, and dependent on niche expertise that our team didn’t possess. The AKS environment was built by an external contractor, making reliable disaster recovery a significant concern.
+
+**Solution:**
+
+We migrated our backend services from AKS to Azure Container Apps (ACA). Leveraging ACA alongside integrated services such as Traffic Manager and vNets, we created a hosting environment that was robust, easier to manage, and far more cost-effective.
+
+### Key Outcomes:
+
+**Robustness:**
+
+Managed services meant that Azure automatically handled updates, reducing operational overhead.
+
+**Reliability:**
+
+Automated improvement recommendations and integrated logging enhanced system stability.
+
+**Cost Effectiveness:**
+
+Monthly hosting expenses dropped from approximately £6k to £1.5k, yielding significant savings while bolstering service confidence.
+
+**Disaster Recovery:**
+
+By automating environment deployments via Bicep templates, our environments became disposable. With a few PRs or manual triggers, we could rapidly spin up new environments—eliminating prolonged downtimes and allowing time to diagnose issues and incorporate improvements.
+
+**Team and Business Impact:**
+
+The company gained greater confidence in its product (demonstrated by a live environment rebuild during a meeting), while the team expanded its expertise in managing outages, ensuring we are prepared even though no major incidents have occurred.
+
+### Additional Reflections:
+
+**Positive:**
+The migration streamlined operations and improved overall system transparency, allowing developers to easily understand the architecture. A live demo of rapid environment provisioning served as a compelling proof of concept for stakeholders.
+
+**Constructive Considerations:**
+
+## While a few manual steps (like configuring Traffic Manager redirects) required documented interventions, these were minimal. ACA does not expose all the settings and features that AKS does, but that has not really an issue as our work loads don't do anything 'out the ordinary'
+
 ## Rethinking Native Apps: Delivering Efficiency & a Unified Experience - _2024_
 
 - **Challenge:** Developing both desktop and native app versions was slow and expensive for our small team. The “write once, use anywhere” promise was overhyped.
