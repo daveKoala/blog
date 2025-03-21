@@ -7,8 +7,6 @@ tags:
   - Development
 ---
 
-# 🧠 Generative AI: Powerful Imitation, Not True Intelligence
-
 _I would be happy to be proven wrong on this article_
 
 ## What it is (and isn’t)
