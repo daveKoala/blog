@@ -7,7 +7,7 @@ tags:
   - code
 ---
 
-TL;DR **Problem:** How do we shuffle an array randomly but repeatably (same seed = same order)?
+TL;DR **Problem:** How do we shuffle an array randomly but repeatedly (same seed = same order)?
 
 - **Solution:** Use a pseudorandom number generator (PRNG) to generate consistent randomness.
 
@@ -17,7 +17,7 @@ In many real-world applications, we need randomized but repeatable results. This
 
 - Shuffling arrays predictably (e.g., ordering test questions the same way for all users with the same seed).
 - Procedural generation in games (e.g., generating maps, terrain, or enemy placement).
-- Consistent randomized behavior in experiments.
+- Consistent randomized behaviour in experiments.
 
 To achieve this, we need:
 
@@ -26,7 +26,7 @@ To achieve this, we need:
 
 ## Understanding PRNGs and Linear Congruential Generators (LCGs)
 
-##### What is a PRNG?
+##### What is a PRNG (PseudoRandom Number Generator)?
 
 A pseudorandom number generator (PRNG) is an algorithm that generates a sequence of numbers that appear random but are entirely predictable if you know the starting point (seed). PRNGs are commonly used in:
 
