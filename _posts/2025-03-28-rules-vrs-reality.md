@@ -1,5 +1,5 @@
 ---
-title: "rules vrs reality"
+title: "Rules vrs Reality"
 last_modified_at: 2025-03-28T13:55:30Z
 categories:
   - Blog
