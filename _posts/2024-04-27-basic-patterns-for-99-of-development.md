@@ -1,6 +1,6 @@
 ---
 title: "Basic patterns for 99% of development"
-last_modified_at: 2024-03-12T14:13:31Z
+last_modified_at: 2024-04-27T14:13:31Z
 categories:
   - code
 tags:
