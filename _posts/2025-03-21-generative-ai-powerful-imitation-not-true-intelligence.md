@@ -7,7 +7,9 @@ tags:
   - Development
 ---
 
-_I would be happy to be proven wrong on this article_
+## Disclaimer
+
+I’m not a Luddite. I use generative AI in both my personal and professional life, and I find the field genuinely fascinating. I can even see myself working more in this space—it’s exciting and full of potential. That said, perhaps it’s my age or just experience, but I remain cautious about the hype and the speed at which governments and businesses are embracing this technology. If history teaches us anything, it’s that the way new technology is introduced and sold often differs significantly from how it ultimately plays out. I'm particularly skeptical of the bold promises being made—many of which seem more aligned with sales pitches and investor appeal than with the current, grounded capabilities of the tools themselves.
 
 ## What it is (and isn’t)
 
@@ -15,7 +17,7 @@ Generative AI models like ChatGPT are **next-token predictors**.
 
 They don’t _know_, _understand_, or _reason_—they generate likely responses based on patterns in massive datasets.
 
-They are **mathematical engines of mimicry**, not minds.
+_They are mathematical engines of mimicry—not minds, not magic._
 
 ---
 
@@ -33,7 +35,7 @@ They are **mathematical engines of mimicry**, not minds.
 
 GenAI is incredibly useful—but it may not lead to real understanding or _Artificial General Intelligence (AGI)_.
 
-**Is scaling all we have? Or is it time to rethink?**
+**If more data and more compute aren’t the answer—what is?**
 
 ---
 
