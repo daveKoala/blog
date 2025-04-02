@@ -96,7 +96,7 @@ The migration streamlined operations and improved overall system transparency, a
 
 **Constructive Considerations:**
 
-## While a few manual steps (like configuring Traffic Manager redirects) required documented interventions, these were minimal. ACA does not expose all the settings and features that AKS does, but that has not really an issue as our work loads don't do anything 'out the ordinary'
+While a few manual steps (like configuring Traffic Manager redirects) required documented interventions, these were minimal. ACA does not expose all the settings and features that AKS does, but that has not really an issue as our work loads don't do anything 'out the ordinary'
 
 ## Rethinking Native Apps: Delivering Efficiency & a Unified Experience - _2024_
 
@@ -114,7 +114,7 @@ The migration streamlined operations and improved overall system transparency, a
 
 ---
 
-## Walked Developers Through Our Infrastructure (Azure AKS/Kubernetes) – _2025_
+## Walked Developers Through Our Infrastructure (Azure AKS/Kubernetes) – _2023_
 
 Led a session on managing our Azure AKS deployments, enabling developers to manipulate deployments and access logs for error tracking.
 
