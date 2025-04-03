@@ -7,7 +7,7 @@ tags:
   - Development
 ---
 
-## TL:DR Key Difference
+## TL:DR Key Differences
 
 - Validation = guard for real-world use (e.g., from user input).
 - Assertion = internal assumption ("this should never happen").
