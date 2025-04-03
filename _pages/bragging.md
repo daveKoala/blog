@@ -7,6 +7,26 @@ _Note: Newest entries are at the top._
 
 ---
 
+## Introduction
+
+I don’t chase complexity for its own sake—I solve real problems.
+
+The entries below highlight how I’ve quietly delivered robust, scalable systems—and made the complex look simple.
+
+---
+
+## How I Approach Problems
+
+I start by asking: What’s the real problem here? What’s valuable? I don’t reach for complexity or trendy tech just to show off—I look for solutions that are understandable, maintainable, and resilient.
+
+A lot of the work I do involves receiving a request, applying logic, and interacting with some kind of storage before returning a response. That sounds simple—but simplicity is often a design goal, not an accident. Under the hood, it means layering in the right amount of middleware, logging, caching, queueing, and secure communication—so things are observable, reliable, and easy to recover when they break.
+
+I tend to prefer managed cloud services over rolling everything from scratch. Not because I can’t build it myself—but because letting teams focus on what creates value (not patching servers or fine-tuning autoscalers) is often the most effective technical choice. When I use a managed tool, I go deep: understanding its limits, tuning it for our needs, and planning for the edge cases where things might go wrong.
+
+I build systems that are predictable under load, quick to debug when needed, and easy to hand over. The entries below reflect that mindset.
+
+---
+
 ## New Team Members Creating a PR Within 30 Minutes of Joining (Deterministic Development Containers) – _2025_
 
 By designing a "Don't Make Me Think" onboarding approach, I ensured that new developers can start coding and creating their first PRs within minutes. This efficiency is achieved by using containers for deterministic deployments and development environments, eliminating the “It works on my machine” problem.
@@ -36,11 +56,12 @@ Our organization needed a versatile internal headless CMS that could manage comp
 We built a custom headless CMS with a comprehensive suite of features:
 
 - **Content Versioning & Approval:** Every change was meticulously tracked and approved, ensuring high content integrity.
+- **Secure by Default:** Built in a vNet-bound architecture with private access to storage and AI tools. Added optional audit trails and PII flagging per content type.
 - **Global Media Accessibility:** Media hosting and delivery were optimized to ensure seamless access, even in restricted regions like China.
 - **Granular Content Grouping:** Content could be grouped, tagged, and accessed via unique API keys, allowing different clients and departments to manage their data securely.
 - **Departmental Autonomy:** Root departments were empowered to create and ring-fence their own content, fostering ownership and localized control.
   Usage Tracking for Billing: Detailed usage tracking was integrated to support transparent internal billing and resource management.
-- **Manual Multi-Language Support:** Recognizing the sensitivity and technical nature of the content, manual language support was implemented for accuracy.
+- **Manual i18n with Workflow Support:** Language switching built in, with localized approval paths—critical where content is legally or technically sensitive.
 - **AI Integration:** AI-powered editing and image creation features enhanced creative workflows, while internal AI tools leveraged the content for training networks.
 - **Speed & Performance Focus:** The CMS was optimized for rapid content delivery, ensuring high performance under demanding conditions.
 - **User Feedback Mechanism:** A dedicated feature allowed end users to provide direct feedback to content creators/editors when information was wrong or out of date, enabling prompt updates and continuous content improvement.
@@ -98,19 +119,35 @@ The migration streamlined operations and improved overall system transparency, a
 
 While a few manual steps (like configuring Traffic Manager redirects) required documented interventions, these were minimal. ACA does not expose all the settings and features that AKS does, but that has not really an issue as our work loads don't do anything 'out the ordinary'
 
-## Rethinking Native Apps: Delivering Efficiency & a Unified Experience - _2024_
+## Rethinking Native Apps: From Complexity to Cohesion – _2023_
 
-- **Challenge:** Developing both desktop and native app versions was slow and expensive for our small team. The “write once, use anywhere” promise was overhyped.
-- **Insights from the Logs:**
-  - **Usage Patterns:** App usage peaked just before events.
-  - **User Behavior:** 95% of users turned off notifications.
-  - **Content Consumption:** Native apps were mainly used to read articles and watch some video, while the desktop version was preferred for interactions, media consumption (videos, PDFs), and richer features.
-- **My Contribution:**
-  - **Strategic Proposal:** Advocated for ditching the native apps in favor of a responsive desktop application.
-  - **Innovative Pivot:** Transformed the desktop app into a Progressive Web App (PWA) to capture mobile benefits without the overhead of native development.
-  - **Feature Enhancements:** Redesigned notifications as in-app alerts and a news feed, and improved scheduled emails to allow users to tailor content.
-  - **Prototype:** Presented a “quick and dirty” version of the PWA to owners and directors, demonstrating easy installation—even for clients unable to download native apps.
-- **Outcome:** Streamlined development, reduced costs, and delivered a unified, accessible user experience across platforms.
+We were maintaining native apps on iOS and Android, but usage logs told a different story. Most users only engaged in bursts, ignored notifications, and preferred desktop for real work.
+
+### My Proposal:
+
+- Kill the Native App. Replaced the high-maintenance mobile builds with a PWA (Progressive Web App)—no downloads, no stores, just install and go.
+
+- Feature Shift:
+
+  - **Notifications** became in-app alerts + email summaries.
+
+  - **Usage-triggered** scheduled emails gave users more control.
+
+  - **Video and PDF** consumption improved with lazy loading and mobile-first responsive design.
+
+  - Prototype Delivery: Built a proof-of-concept PWA to show it could install and behave like a native app, with no App Store overhead—perfect for clients behind locked-down IT environments.
+
+### Engineering Highlights:
+
+Implemented **Service Workers** for offline support and background sync.
+
+Used **IndexedDB** for client-side storage of articles and preferences.
+
+Auto-generated manifests and smart caching strategies to improve installability and reduce server load.
+
+## Results:
+
+**Faster delivery, better UX, lower cost.** One unified app for all platforms, without the overhead of app store compliance or native SDK divergence.
 
 ---
 
