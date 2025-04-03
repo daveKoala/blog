@@ -4,11 +4,11 @@ title: "About"
 author_profile: true
 ---
 
-Hello, I'm David Clare, an experienced developer dedicated to delivering practical, reliable solutions that help companies move faster and achieve more. My career spans decades of hands-on technical work, strategic leadership, and team development across high-stakes environments.
+An experienced developer and tech lead who believes the best software isn't built by following rigid rules—it's built by people who understand when to follow them, when to bend them, and when to throw them out entirely.
 
 ## My Professional Journey
 
-I have held roles ranging from Senior Developer to Senior Tech Lead at organizations like Accenture and Cirrus Connect. Whether I'm modernizing technology stacks, migrating complex infrastructures, or building resilient systems, my focus has always been on turning challenges into opportunities. Key highlights include:
+Over the years, I've held roles from Senior Developer to Senior Tech Lead in high-stakes environments where clarity, speed, and reliability matter. Whether modernizing stacks, leading cross-functional teams, or building from scratch, my focus is always the same: make things work, keep them running, and help the team thrive. Key highlights include:
 
 - **Accenture (Senior Tech Lead & Developer):** Spearheading strategic planning, process optimization, and cross-functional collaboration to drive global projects.
 - **Cirrus Connect:** Leading the transition from legacy systems to modern, scalable architectures using Node.js, TypeScript, and cloud migrations.
@@ -22,6 +22,20 @@ I believe lasting success is achieved by balancing innovation with a deep unders
 - **Team Empowerment:** Nurturing talent and fostering an environment where every team member contributes to our shared success.
 - **Continuous Improvement:** Embracing change and refining processes to drive efficiency and quality.
 - **Strategic Alignment:** Ensuring that technical initiatives align with broader organizational goals.
+
+## Leadership & Collaboration
+
+I’ve mentored junior devs, supported cross-discipline teams, and created onboarding flows that help new hires commit code on day one. I believe in clear ownership, fast feedback loops, and empowering teams to do their best work without micromanagement.
+
+## The Bigger Picture
+
+I’ve worked in both agile startups and global enterprises, and what I’ve learned is that technical decisions are never just technical. They carry emotional, cultural, and political weight.
+
+That’s why I pay attention to:
+
+- What’s worth standardizing
+- What the team can realistically maintain
+- How to keep technical direction aligned with business goals
 
 ## Technical Expertise
 
