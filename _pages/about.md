@@ -8,7 +8,7 @@ An experienced developer and tech lead who believes the best software isn't buil
 
 ## My Professional Journey
 
-Over the years, I've held roles from Senior Developer to Senior Tech Lead in high-stakes environments where clarity, speed, and reliability matter. Whether modernizing stacks, leading cross-functional teams, or building from scratch, my focus is always the same: make things work, keep them running, and help the team thrive. Key highlights include:
+Over the years, as I've gained experience and scars so to has my roles and responsibilities grow. Now Senior Developer / Tech Lead in high-stakes environments where clarity, speed, and reliability matter. Whether modernizing stacks, leading cross-functional teams, or building from scratch, my focus is always the same: make things work, keep them running, and help the team thrive. Key highlights include:
 
 - **Accenture (Senior Tech Lead & Developer):** Spearheading strategic planning, process optimization, and cross-functional collaboration to drive global projects.
 - **Cirrus Connect:** Leading the transition from legacy systems to modern, scalable architectures using Node.js, TypeScript, and cloud migrations.
