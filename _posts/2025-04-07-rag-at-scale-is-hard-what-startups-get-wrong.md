@@ -1,5 +1,5 @@
 ---
-title: "RAG at Scale is Hard: What Startups Getting Wrong?"
+title: "RAG at Scale is Hard: Are Startups Getting It Wrong?"
 last_modified_at: 2025-04-07T12:46:41Z
 categories:
   - Blog
@@ -46,7 +46,7 @@ One common question is: “Why not just fine-tune the LLM on our own company’s
 The answer is that **fine-tuning is rarely the right approach for general knowledge retrieval.** When you fine-tune a large model, your specific data gets blended into the ocean of its existing knowledge. Unless you have massive, high-quality, and domain-specific training data, your information is likely to be diluted—leading to less accurate responses and more hallucinations, not fewer. Fine-tuned models also lack transparency: it’s much harder to know where an answer came from, or whether it's grounded in your latest documents.
 **RAG keeps your company’s data separate and fresh,** enabling the model to retrieve relevant content in real-time and generate answers with context and citations—without rewriting the model’s brain every time your business updates a policy.
 
-## What Startups Get Wrong
+## Are Startups Getting It Wrong?
 
 Here’s the core misunderstanding:
 **RAG isn’t a feature — it’s a platform.**
@@ -76,7 +76,7 @@ This means:
 
 - Sometimes rewriting or augmenting the user’s question
 
-And you’ll need a way to measure it. “Feels about right” won’t cut it when clients start using it in their workflows.
+And you’ll need a way to measure it. _"Feels about right"_ won’t cut it when clients start using it in their workflows.
 
 ### 3. Prompt Engineering Isn’t a One-Time Job
 
@@ -135,9 +135,9 @@ Here’s what I’ve learned from experiments, interviews, and seeing the guts o
 
 - **Explain your answers.** Grounding, citations, document previews—whatever builds trust.
 
-\_ **Treat prompts as evolving code.** They’re part of the system, not a magic incantation.
+- **Treat prompts as evolving code.** They’re part of the system, not a magic incantation.
 
-- **Don’t offer “upload anything.”** Guide your users to what works well first.
+- **Don’t offer "upload anything".** Guide your users to what works well first.
 
 ## Closing Thought
 
@@ -146,4 +146,5 @@ RAG is exciting. It’s one of the most promising ways to build useful, trustwor
 But it’s not a shortcut. It’s not a silver bullet. And it’s not something you can slap together in a two-week sprint with vague requirements and arbitrary data.
 
 If you want to build a product around RAG, don’t treat it like a feature.
+
 Treat it like a platform—because that’s what it is.
