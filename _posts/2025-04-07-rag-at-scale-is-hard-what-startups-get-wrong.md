@@ -3,8 +3,10 @@ title: "RAG at Scale is Hard: Are Startups Getting It Wrong?"
 last_modified_at: 2025-04-07T12:46:41Z
 categories:
   - Blog
+  - AI
 tags:
   - Development
+  - AI
 ---
 
 Draft!

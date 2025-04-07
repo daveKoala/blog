@@ -3,8 +3,10 @@ title: "Generative AI: Powerful Imitation, Not True Intelligence"
 last_modified_at: 2025-03-21T14:19:27Z
 categories:
   - Code
+  - AI
 tags:
   - Development
+  - AI
 ---
 
 ## Disclaimer
