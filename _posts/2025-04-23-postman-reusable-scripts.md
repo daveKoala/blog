@@ -11,7 +11,7 @@ I keep forgetting this.
 
 ## Problem
 
-I have need of some reusable methods/functions when I am testing my API's with Postman. For example in one collection I need a random string from an array and i need to define that once.
+I have need of some reusable methods/functions when I am testing my API's with Postman. For example in one collection I need a random string from an array and I need to define that once.
 
 ## Solution
 
