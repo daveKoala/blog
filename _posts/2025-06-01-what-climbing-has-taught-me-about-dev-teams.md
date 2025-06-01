@@ -7,8 +7,6 @@ category: engineering
 description: Lessons from a decade in the outdoor industry and how those same safety principles can build more resilient development teams.
 ---
 
-# From Helmets to Headsets: What Dev Teams Can Learn from the Outdoor Industry
-
 *This post might be stretching a metephor, but bear with me*
 
 For over a decade, I worked in the outdoor industry, running centres, supporting stage and screen rigging, and helping build a centre of excellence that even the Health and Safety Executive used for training.
