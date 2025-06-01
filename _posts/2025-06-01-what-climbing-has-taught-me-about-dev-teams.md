@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "From Helmets to Headsets — What Dev Teams Can Learn from the Outdoor Industry"
 date: 2025-05-31
 author: your-name-here
