@@ -1,9 +1,16 @@
 ---
 title: "From Helmets to Headsets — What Dev Teams Can Learn from the Outdoor Industry"
-date: 2025-05-31
-tags: [devops, teams, leadership, resilience, safety]
-category: engineering
-description: Lessons from a decade in the outdoor industry and how those same safety principles can build more resilient development teams.
+tags: 
+  - devops
+  - teams
+  - leadership
+  - resilience
+  - safety
+last_modified_at: 2025-06-01T09:34:22Z
+categories:
+  - Blog
+tags:
+  - Development
 ---
 
 *This post might be stretching a metephor, but bear with me*
