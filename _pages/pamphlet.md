@@ -1,5 +1,5 @@
 ---
-permalink: /brag/
+permalink: /pamphlet/
 excerpt: "The Pragmatist's Manifesto: A Developer's Guide to Building Things That Actually Matter"
 categories:
   - Blog
