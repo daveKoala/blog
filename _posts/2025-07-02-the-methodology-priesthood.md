@@ -2,7 +2,8 @@
 title: "The Methodology Priesthood,"
 last_modified_at: 2025-07-02T15:13:02Z
 categories:
-  - [code, satire]
+  - code
+  - satire
 tags:
   - daft
 ---
