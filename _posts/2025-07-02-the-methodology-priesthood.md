@@ -7,10 +7,7 @@ tags:
   - daft
 ---
 
-> _"Agile is the worst way to organise development — except for all the others."_  
-> — Winston Churchill, probably
-
-![Winston Churchill, developer edition]({{ site.baseurl }}/assets/images/churchill.png)
+![Winston Churchill, probably]({{ site.baseurl }}/assets/images/churchill.png)
 
 ## The Rise of the Methodology Priesthood
 
