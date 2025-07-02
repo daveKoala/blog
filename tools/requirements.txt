@@ -1,2 +1,4 @@
 python-frontmatter
 tiktoken
+matplotlib
+nltk
