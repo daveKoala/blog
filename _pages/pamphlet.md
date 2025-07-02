@@ -1,0 +1,382 @@
+---
+permalink: /brag/
+excerpt: "The Pragmatist's Manifesto: A Developer's Guide to Building Things That Actually Matter"
+categories:
+  - Blog
+  - Manifesto
+  - tags:
+  - Development
+  - Philosophy
+  - Pragmatism
+  - Anti-Dogma
+
+toc: true
+toc_label: "The Manifesto"
+toc_icon: "hammer"
+---
+
+> _"A spectre is haunting software development — the spectre of Actually Getting Things Done."_
+
+> _I might exaggerate a little to get my point across_
+
+## Foreword
+
+You're in a meeting about "planning a meeting to discuss the retrospective about why the last sprint planning session didn't align with the quarterly OKRs that were derived from the annual strategic planning workshop".
+
+Somewhere between "move fast and break things" and "enterprise-grade solutions," we forgot how to just... build stuff.
+
+This manifesto is for those ready to choose:
+
+Keep attending the ceremonies, or start shipping code that users actually want.
+
+Like the pamphleteers of old, this manifesto is born of frustration—not with kings or taxes, but with the priesthood of process that has convinced an entire industry that following rules is more important than solving problems.
+
+This manifesto follows in the proud tradition of the pamphleteer—those brave souls who, armed with nothing but conviction and a printing press, dared to challenge the established order.
+
+From Thomas Paine's Common Sense, rallying colonists against tyranny, to Jonathan Swift's A Modest Proposal. The pamphlet has always been the weapon of choice for those who refuse to accept _"because that's how we've always done it"_ as sufficient justification.
+
+Swift suggested eating babies to solve poverty, a modest proposal that was, of course, deeply immodest satire designed to shame politicians into actual solutions. In that same spirit, I modestly propose we stop worshipping process and start shipping software. A suggestion that may seem equally radical to those trapped in the ceremonial industrial complex of modern development.
+
+So here's my modest proposal: Let's put our energies into making things that work instead of following frameworks that consume time and resources.
+
+_The revolution will be shipped, not documented._
+
+---
+
+## Chapter I: The Priesthood Problem
+
+> _"Each priesthood begins with wisdom. But soon, the tools become rules. The patterns become dogma. The advice becomes a liturgy."_
+
+Every software movement follows the same tragic arc:
+
+1. **Smart person solves real problem**
+2. **Smart person writes about solution**
+3. **Solution becomes "best practice"**
+4. **Best practice becomes commandment**
+5. **Commandment becomes religion**
+6. **Religion becomes... Stack Overflow arguments**
+
+### The Pattern in Action
+
+**Uncle Bob's Clean Code** → 5-line function fundamentalism  
+**Gang of Four patterns** → Design pattern cargo cult  
+**Agile Manifesto** → Scrum ceremony industrial complex
+
+The ChatGPT haiku of decline:
+
+_Wisdom becomes rules_  
+_Rules become sacred dogma_  
+_Dogma becomes memes_
+
+---
+
+## Chapter II: Confessions of a Reformed Process Addict
+
+> _"Hi, my name is Dave, and I used to believe in 100% test coverage."_
+
+### The Five Stages of Process Grief
+
+**Denial:** "If we just follow the process perfectly..."  
+**Anger:** "Why isn't this working?!"  
+**Bargaining:** "Maybe we need more process..."  
+**Depression:** "We'll never ship anything on time..."  
+**Acceptance:** "Let's just build the damn thing."
+
+### The Turning Point
+
+That moment when you ship a "quick and dirty" feature that users love, while the "properly architected" solution is still in sprint planning.
+
+**Reality check:** Users don't care about your elegant abstractions. They care about solutions to their problems.
+
+---
+
+## Chapter III: Are The Sacred Texts Lies?
+
+> _"SOLID principles are like the Ten Commandments, except there are five of them, and half your team can't remember what they stand for."_
+
+### SOLID Skepticism
+
+- **Single Responsibility:** "Everything should do one thing" → Functions so small you need a satnav to follow the logic
+- **Open/Closed:** "Open for extension, closed for modification" → Abstraction layers that nobody understands
+- **Liskov Substitution:** [Insert academic explanation nobody uses]
+- **Interface Segregation:** More interfaces than actual code
+- **Dependency Inversion:** Because your coffee maker should depend on abstractions
+
+### Open/Closed
+
+All the tutorials say this is bad:
+
+```:bash
+// Instead of modifying this function every time...
+function calculateDiscount(customer, orderType) {
+  if (orderType === 'regular') return 0;
+  if (orderType === 'premium') return 0.1;
+  if (orderType === 'vip') return 0.2;
+  // Oh no, we need to add 'corporate' discount...
+  // Have to modify this function again!
+}
+
+```
+
+And we should make it "open for extension"
+
+```:bash
+class DiscountCalculator {
+  constructor() {
+    this.strategies = new Map();
+  }
+
+  addStrategy(type, calculator) {
+    this.strategies.set(type, calculator);
+  }
+
+  calculate(customer, orderType) {
+    return this.strategies.get(orderType)?.(customer) || 0;
+  }
+}
+```
+
+Fair enough, but what I see happen is this:
+
+```bash
+interface IDiscountStrategy {
+  calculate(customer: ICustomer): number;
+}
+
+class DiscountStrategyFactory {
+  createStrategy(type: DiscountType): IDiscountStrategy {
+    return this.strategyBuilder
+      .withType(type)
+      .withCustomerValidator(this.validator)
+      .withAuditLogger(this.logger)
+      .build();
+  }
+}
+
+class ConfigurableDiscountProcessor {
+  constructor(
+    private factory: IDiscountStrategyFactory,
+    private validator: ICustomerValidator,
+    private logger: IAuditLogger
+  ) {}
+
+  // 47 more lines of abstraction...
+}
+```
+
+- **Premature Abstraction:** Developers create complex extensibility mechanisms for requirements that don't exist yet.
+- **Nobody Understands It:** Six months later, when you actually need to add that corporate discount, you spend 3 hours trying to figure out how your own abstraction works.
+- **The Irony:** It's often easier to just modify the original simple function than navigate the "extensible" architecture.
+
+**The Pragmatist's Take**
+Ask: Do we actually need this to be extensible?
+Usually: No, we have 3 discount types and they're stable
+So: Write the simple if/else and move on
+When: You actually need the 47th discount type, THEN abstract
+
+### DRY Humour
+
+Don't Repeat Yourself becomes Don't Repeat Yourself becomes... wait.
+
+### DRY Humour
+
+Don't Repeat Yourself becomes Don't Repeat Yourself becomes... wait.
+
+### The Real Principles
+
+- **KISS:** Keep It Simple, Stupid (Revolutionary!)
+- **YAGNI:** You Aren't Gonna Need It (Heretical!)
+- **FPOOP:** Functional Plus Object-Oriented Programming (I wish I knew where I heard this)
+
+---
+
+## Chapter IV: Field Guide to Compliance Theatre
+
+> _"The appearance of doing the right thing becomes more important than actually doing the right thing."_
+
+### Spotting the Signs
+
+- Tests that always pass but don't test anything
+- Documentation written after the fact to satisfy audits
+- Code reviews that focus on formatting instead of logic
+- Meetings about having better meetings
+- Sprint planning sessions longer than the sprints themselves (You know what I mean)
+
+ISO certification. There should be a check box on the form for 'Yes we do have a disaster plan -- but we never practice'
+
+### The Normalization of Deviance
+
+How "just this once" becomes "this is how we do things":
+
+1. **Exception:** We skip the process due to urgency
+2. **Rationalization:** "It worked out fine"
+3. **Repetition:** We skip it again
+4. **Normalization:** Skipping becomes standard
+5. **Institutionalization:** New people learn the "real" process
+
+### Breaking Free
+
+- **Question everything:** "Why do we do this?"
+- **Make the right thing the easy thing**
+- **Measure outcomes, not activities**
+- **Embrace productive failure**
+
+---
+
+## Chapter V: The Anti-Dogma Toolkit
+
+> _"These are the tools of resistance against the cargo cult of complexity."_
+
+### Good Enough is Good Enough
+
+- **Working code** > Perfect architecture
+- **Shipped features** > Comprehensive documentation
+- **User feedback** > Internal debates
+- **Iterative improvement** > Upfront perfection
+
+### The Scotty Principle
+
+From the engineering decks of the Enterprise to your development team:
+
+1. Calculate the actual time needed
+2. Add 25-50% buffer (depending on complexity)
+3. Commit to the buffered estimate
+4. Promise conservatively, deliver consistently" or "Build in buffers, not excuses.
+5. Always have a Plan B (and maybe Plan C)
+
+### Delivery-Driven Development
+
+Ask the right questions:
+
+- What do we need to ship this safely?
+- How do we get feedback fast?
+- Can we make it simpler?
+- What's the minimum viable solution?
+
+---
+
+## Chapter VI: The Pragmatist's Creed
+
+> _"We hold these truths to be self-evident: that all code is created for users, that developers are endowed by their experience with certain unalienable rights, that among these are shipping software, getting feedback, and the pursuit of working solutions."_
+
+### What We Value
+
+**Building over Bikeshedding**  
+**Shipping over Perfecting**  
+**Learning over Knowing**  
+**Adapting over Following**
+
+### What We Believe
+
+- Code exists to solve problems, not win architecture contests
+- The best technical decision is often the boring one
+- Users don't care about your elegant abstractions
+- "It depends" is usually the right answer
+- Technical decisions carry emotional, cultural, political, financial, and time weights (I'll have to write up notes on this)
+
+### What We Practice
+
+- Asking "why" before "how"
+- Optimizing for change, not permanence
+- Making mistakes fast and cheap
+- Building teams that can learn and adapt
+- Cross-training to eliminate knowledge silos
+- Making the right thing the easy thing
+
+### What We Reject
+
+- Complexity for complexity's sake
+- Process for process's sake
+- Rules that don't serve users
+- The worship of tools over outcomes
+- Cargo cult programming
+- Holy wars over formatting
+
+---
+
+## Chapter VII: Battle Cries of the Pragmatist
+
+### Our Rallying Calls
+
+_"While others debate tabs vs spaces, we ship features."_
+
+_"While others plan the perfect architecture, we iterate toward it."_
+
+_"While others write documentation about writing documentation, we write code."_
+
+_"While others are stuck in Sprint Planning Purgatory, we build, ship, listen, and adapt."_
+
+### The Pragmatist's Haiku Collection (Thanks ChatGPT)
+
+**On Wisdom:**
+_Wisdom becomes rules_  
+_Tools harden into dogma_  
+_Advice turns to prayer_
+
+**On Priorities:**
+_Pragmatists just ship_  
+_Others trapped in meetings about_  
+_Sprint planning meetings_
+
+**On Focus:**
+_Build it, ship it, learn_  
+_While others debate story_  
+_Points for bathroom breaks_
+
+---
+
+## Closing: The Revolution Will Be Shipped
+
+> _"The revolution will not be architected. It will not have 100% test coverage. It will not follow semantic versioning. The revolution will be shipped, and it will work."_
+
+**Blessed be the pragmatists.**  
+They build, they ship, they listen, they adapt.  
+The rest are still stuck in Sprint Planning Purgatory.
+
+### Join the Movement
+
+This manifesto is a living document. It grows through the shared experiences of developers who choose building over bureaucracy, shipping over perfection, and users over abstractions.
+
+**Share your stories.** **Question the dogma.** **Ship the code.**
+
+The users are waiting.
+
+---
+
+**Dedication:** _To every developer who has ever shipped working code while their colleagues were still debating the proper way to name variables. You are the unsung heroes of software development._
+
+---
+
+## OKRs = Objectives and Key Results
+
+It's a goal-setting framework that became the latest management fad after Google (?)popularized it. The idea is:
+
+Objective: A qualitative, aspirational goal
+Key Results: Quantitative measures that show you've achieved the objective
+
+Example:
+Objective: "Improve user experience"
+Key Results:
+
+Reduce page load time to under 2 seconds
+Increase user satisfaction score to 4.5/5
+Decrease support tickets by 30%
+
+### Why It's in the Manifesto
+
+OKRs represent exactly the kind of process cargo cult the manifesto critiques:
+
+- Started useful: Intel and Google used them effectively
+- Became dogma: Every company now "needs" OKRs
+- Spawned bureaucracy: Quarterly OKR planning sessions, OKR alignment meetings, OKR review meetings...
+- Lost the plot: People spend more time managing OKRs than achieving actual outcomes
+
+### The Pragmatist's Take
+
+Good: Having clear, measurable goals
+Bad: The entire OKR industrial complex of consultants, workshops, and ceremony
+Reality: Most teams already know what they need to do - they just need to be allowed to do it
+
+## It's basically another example of how good ideas become rigid processes that eventually hinder the very outcomes they were meant to achieve.
+
+_P.S. - If this manifesto has too many meetings scheduled to discuss its implementation, you've missed the point entirely._
