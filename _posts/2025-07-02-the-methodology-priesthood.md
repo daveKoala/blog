@@ -27,6 +27,8 @@ Behold! Tremble before the **Methodology Priesthood**.
 
 ![The Four Shamans of the Devpocalypse]({{ site.baseurl }}/assets/images/gang_of_four.png)
 
+_ChatGPT can spel as well as me_
+
 ## The Agile Shaman
 
 He chants the _Stand-Up Sutra_.  
