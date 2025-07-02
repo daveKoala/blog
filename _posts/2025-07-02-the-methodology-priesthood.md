@@ -72,6 +72,10 @@ When you ask _why_, he responds:
 
 > "Just trust the re-render cycle."
 
+## There are many more
+
+But don`t want everyone to hate me
+
 ---
 
 ## The Doctrine
@@ -109,5 +113,7 @@ But progress often comes when someone quietly says:
 **Blessed be the pragmatists. A haiku**
 
 Pragmatists just ship
+
 Others trapped in meetings about
+
 Sprint planning meetings
