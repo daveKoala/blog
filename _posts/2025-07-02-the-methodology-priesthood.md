@@ -112,7 +112,7 @@ But progress often comes when someone quietly says:
 
 ---
 
-**Blessed be the pragmatists. A haiku**
+**Blessed be the pragmatists. A ChatGPT haiku**
 
 Pragmatists just ship
 
