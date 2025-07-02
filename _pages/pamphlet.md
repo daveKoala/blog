@@ -4,7 +4,8 @@ excerpt: "The Pragmatist's Manifesto: A Developer's Guide to Building Things Tha
 categories:
   - Blog
   - Manifesto
-  - tags:
+
+tags:
   - Development
   - Philosophy
   - Pragmatism
