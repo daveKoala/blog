@@ -20,7 +20,7 @@ Each declaring **_The Way_**.
 
 They gathered followers. They declared best practices. They warned of ruin for the unconverted.
 
-Behold... the **Methodology Priesthood**.
+Behold! Tremble before the **Methodology Priesthood**.
 
 ---
 
@@ -85,7 +85,7 @@ If things don’t work, it’s not the method.
 
 ---
 
-## 🪓 The Exit from Orthodoxy
+## The Exit from Orthodoxy
 
 Here’s the thing:
 
@@ -105,8 +105,8 @@ But progress often comes when someone quietly says:
 
 ---
 
-**Blessed be the pragmatists.**
+**Blessed be the pragmatists. A haiku**
 
-They build, they ship, they listen, they adapt.
-
-The rest are still stuck in Sprint Planning Purgatory.
+Pragmatists just ship
+Others trapped in meetings about
+Sprint planning meetings
