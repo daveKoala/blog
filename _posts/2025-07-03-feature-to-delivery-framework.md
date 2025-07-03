@@ -11,9 +11,6 @@ I was asked in an interview to explain how I go about planning features/work.
 
 _For urgent bug fixes or 'hot fixes', I'll add another post_
 
-- This will become a table of contents (this text will be scrapped).
-  {:toc}
-
 ## Phase 1: Requirements Gathering & Clarification
 
 ### What I Do:
